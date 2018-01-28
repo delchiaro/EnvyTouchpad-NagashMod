@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{21EEC702-9510-471A-97BD-4C6AB11F4CED}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>envyTouchPad</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;C:\Users\chun\Documents\Visual Studio 2010\Projects\envy TouchPad\SynapticsSDK\Include;</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;C:\Users\chun\Documents\Visual Studio 2010\Projects\envy TouchPad\SynapticsSDK\Lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(WindowsSDK_IncludePath);C:\Applicazioni\Programming\SDK\SynapticsAPI\Include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include</IncludePath>
+    <LibraryPath>$(WindowsSDK_LibraryPath_x86);C:\Applicazioni\Programming\SDK\SynapticsAPI\Lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+    <TargetName>envyTouchPad</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>"C:\Users\chun\Documents\Visual Studio 2010\Projects\envy TouchPad\SynapticsSDK\Lib\SynCom.lib";"C:\Users\chun\Documents\Visual Studio 2010\Projects\envy TouchPad\SynapticsSDK\Lib\SynCtrl.lib"</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>"C:\Applicazioni\Programming\SDK\SynapticsAPI\Lib\SynCom.lib";"C:\Applicazioni\Programming\SDK\SynapticsAPI\Lib\SynCtrl.lib"</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\touchpad.ico" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ActionConfiguration.cpp" />
+    <ClCompile Include="Actions.cpp" />
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Configurations.cpp" />
+    <ClCompile Include="DisableTapEvent.cpp" />
+    <ClCompile Include="EasingAlgorithm.cpp" />
+    <ClCompile Include="envy TouchPad.cpp" />
+    <ClCompile Include="ExecutingScrollEvent.cpp" />
+    <ClCompile Include="FingerScrollEvent.cpp" />
+    <ClCompile Include="GeneralConfiguration.cpp" />
+    <ClCompile Include="InertialScrollData.cpp" />
+    <ClCompile Include="InertialScrollManager.cpp" />
+    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="KeyboardAction.cpp" />
+    <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="FingerTapAndDragTapEvent.cpp" />
+    <ClCompile Include="MouseAction.cpp" />
+    <ClCompile Include="Packet.cpp" />
+    <ClCompile Include="ScrollConfiguration.cpp" />
+    <ClCompile Include="ScrollEventHandler.cpp" />
+    <ClCompile Include="ScrollState.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TapConfiguration.cpp" />
+    <ClCompile Include="TapEventHandler.cpp" />
+    <ClCompile Include="TapState.cpp" />
+    <ClCompile Include="TouchPad.cpp" />
+    <ClCompile Include="TouchPadEventListener.cpp" />
+    <ClCompile Include="FingerTapEvent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\SynapticsSDK\Include\SynCom.h" />
+    <ClInclude Include="..\SynapticsSDK\Include\SynComDefs.h" />
+    <ClInclude Include="..\SynapticsSDK\Include\SynCtrl.h" />
+    <ClInclude Include="..\SynapticsSDK\Include\SynError.h" />
+    <ClInclude Include="..\SynapticsSDK\Include\SynKit.h" />
+    <ClInclude Include="..\SynapticsSDK\Include\SynWraps.h" />
+    <ClInclude Include="Action.h" />
+    <ClInclude Include="ActionConfiguration.h" />
+    <ClInclude Include="Actions.h" />
+    <ClInclude Include="Configuration.h" />
+    <ClInclude Include="Configurations.h" />
+    <ClInclude Include="DisableTapEvent.h" />
+    <ClInclude Include="EasingAlgorithm.h" />
+    <ClInclude Include="envyTouchPadApplicationContext.h" />
+    <ClInclude Include="ExecutingScrollEvent.h" />
+    <ClInclude Include="FingerScrollEvent.h" />
+    <ClInclude Include="frmPacketObserver.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmSettings.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GeneralConfiguration.h" />
+    <ClInclude Include="InertialScrollData.h" />
+    <ClInclude Include="InertialScrollManager.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="KeyboardAction.h" />
+    <ClInclude Include="Mouse.h" />
+    <ClInclude Include="FingerTapAndDragTapEvent.h" />
+    <ClInclude Include="MouseAction.h" />
+    <ClInclude Include="Packet.h" />
+    <ClInclude Include="PacketObserver.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ScrollConfiguration.h" />
+    <ClInclude Include="ScrollEvent.h" />
+    <ClInclude Include="ScrollEventHandler.h" />
+    <ClInclude Include="ScrollState.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TapConfiguration.h" />
+    <ClInclude Include="TapEvent.h" />
+    <ClInclude Include="TapEventHandler.h" />
+    <ClInclude Include="TapState.h" />
+    <ClInclude Include="TouchPad.h" />
+    <ClInclude Include="TouchPadEventListener.h" />
+    <ClInclude Include="FingerTapEvent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmPacketObserver.resx">
+      <DependentUpon>frmPacketObserver.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resX">
+      <DependentUpon>frmSettings.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

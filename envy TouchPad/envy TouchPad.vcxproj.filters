@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="events">
+      <UniqueIdentifier>{a4cfd50c-889a-434b-b3b3-6d49f3469052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="events\tap">
+      <UniqueIdentifier>{fe35b28d-91f4-4ba8-84b2-088d529989a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="synaptics">
+      <UniqueIdentifier>{cba93b2d-1af5-4dfa-a8ef-d7b8859912f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="synaptics\model">
+      <UniqueIdentifier>{377e4a13-8c01-4f44-b3c2-3e5ee466767f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="state">
+      <UniqueIdentifier>{de6606ec-2676-49fe-bf7e-6da99d1926d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="configuration">
+      <UniqueIdentifier>{3430c09d-9207-4ce4-8491-bb96de7ce6d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="events\tap\handler">
+      <UniqueIdentifier>{aba93fed-2638-4682-83a9-51122adf4cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mouse">
+      <UniqueIdentifier>{e36ca38a-9026-4deb-9739-09e5c9804c40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="events\scroll">
+      <UniqueIdentifier>{683074ce-3dc0-46ef-9dd8-3fac52bd9de4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="events\scroll\handler">
+      <UniqueIdentifier>{04cca42a-a04f-4163-9d69-6b334e4f4d14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="observer">
+      <UniqueIdentifier>{a27da7c4-0e07-4b18-b2fe-e2b4b2a094f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="events\scroll\inertial">
+      <UniqueIdentifier>{3955da23-02e7-4965-926c-0fdc9c4b33e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="events\scroll\inertial\easing">
+      <UniqueIdentifier>{dd76242c-5383-4879-b806-68b568b023eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="keyboard">
+      <UniqueIdentifier>{421d0bc9-c8e3-4e01-a524-bda515793125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="events\scroll\actions">
+      <UniqueIdentifier>{a3e4fede-ac97-4d07-9d91-062a70017171}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="..\touchpad.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="envy TouchPad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Packet.cpp">
+      <Filter>synaptics\model</Filter>
+    </ClCompile>
+    <ClCompile Include="TouchPad.cpp">
+      <Filter>synaptics\model</Filter>
+    </ClCompile>
+    <ClCompile Include="TouchPadEventListener.cpp">
+      <Filter>events</Filter>
+    </ClCompile>
+    <ClCompile Include="TapState.cpp">
+      <Filter>state</Filter>
+    </ClCompile>
+    <ClCompile Include="TapEventHandler.cpp">
+      <Filter>events\tap\handler</Filter>
+    </ClCompile>
+    <ClCompile Include="FingerTapEvent.cpp">
+      <Filter>events\tap</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="Configurations.cpp">
+      <Filter>configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="TapConfiguration.cpp">
+      <Filter>configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="FingerTapAndDragTapEvent.cpp">
+      <Filter>events\tap</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneralConfiguration.cpp">
+      <Filter>configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollConfiguration.cpp">
+      <Filter>configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollEventHandler.cpp">
+      <Filter>events\scroll\handler</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollState.cpp">
+      <Filter>state</Filter>
+    </ClCompile>
+    <ClCompile Include="FingerScrollEvent.cpp">
+      <Filter>events\scroll</Filter>
+    </ClCompile>
+    <ClCompile Include="EasingAlgorithm.cpp">
+      <Filter>events\scroll\inertial\easing</Filter>
+    </ClCompile>
+    <ClCompile Include="InertialScrollManager.cpp">
+      <Filter>events\scroll\inertial</Filter>
+    </ClCompile>
+    <ClCompile Include="InertialScrollData.cpp">
+      <Filter>events\scroll\inertial</Filter>
+    </ClCompile>
+    <ClCompile Include="ExecutingScrollEvent.cpp">
+      <Filter>events\scroll</Filter>
+    </ClCompile>
+    <ClCompile Include="DisableTapEvent.cpp">
+      <Filter>events\tap</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionConfiguration.cpp">
+      <Filter>configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions.cpp">
+      <Filter>events\scroll\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseAction.cpp">
+      <Filter>events\scroll\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardAction.cpp">
+      <Filter>events\scroll\actions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frmSettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TapEvent.h">
+      <Filter>events\tap</Filter>
+    </ClInclude>
+    <ClInclude Include="envyTouchPadApplicationContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SynapticsSDK\Include\SynWraps.h">
+      <Filter>synaptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SynapticsSDK\Include\SynCom.h">
+      <Filter>synaptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SynapticsSDK\Include\SynComDefs.h">
+      <Filter>synaptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SynapticsSDK\Include\SynCtrl.h">
+      <Filter>synaptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SynapticsSDK\Include\SynError.h">
+      <Filter>synaptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SynapticsSDK\Include\SynKit.h">
+      <Filter>synaptics</Filter>
+    </ClInclude>
+    <ClInclude Include="TouchPad.h">
+      <Filter>synaptics\model</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet.h">
+      <Filter>synaptics\model</Filter>
+    </ClInclude>
+    <ClInclude Include="TouchPadEventListener.h">
+      <Filter>events</Filter>
+    </ClInclude>
+    <ClInclude Include="TapState.h">
+      <Filter>state</Filter>
+    </ClInclude>
+    <ClInclude Include="Configurations.h">
+      <Filter>configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="TapEventHandler.h">
+      <Filter>events\tap\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="FingerTapEvent.h">
+      <Filter>events\tap</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="TapConfiguration.h">
+      <Filter>configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="FingerTapAndDragTapEvent.h">
+      <Filter>events\tap</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration.h">
+      <Filter>configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralConfiguration.h">
+      <Filter>configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollConfiguration.h">
+      <Filter>configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollEventHandler.h">
+      <Filter>events\scroll\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollEvent.h">
+      <Filter>events\scroll</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollState.h">
+      <Filter>state</Filter>
+    </ClInclude>
+    <ClInclude Include="FingerScrollEvent.h">
+      <Filter>events\scroll</Filter>
+    </ClInclude>
+    <ClInclude Include="EasingAlgorithm.h">
+      <Filter>events\scroll\inertial\easing</Filter>
+    </ClInclude>
+    <ClInclude Include="InertialScrollManager.h">
+      <Filter>events\scroll\inertial</Filter>
+    </ClInclude>
+    <ClInclude Include="InertialScrollData.h">
+      <Filter>events\scroll\inertial</Filter>
+    </ClInclude>
+    <ClInclude Include="ExecutingScrollEvent.h">
+      <Filter>events\scroll</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketObserver.h">
+      <Filter>observer</Filter>
+    </ClInclude>
+    <ClInclude Include="frmPacketObserver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DisableTapEvent.h">
+      <Filter>events\tap</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionConfiguration.h">
+      <Filter>configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Action.h">
+      <Filter>events\scroll\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions.h">
+      <Filter>events\scroll\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardAction.h">
+      <Filter>events\scroll\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseAction.h">
+      <Filter>events\scroll\actions</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmSettings.resX">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPacketObserver.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
